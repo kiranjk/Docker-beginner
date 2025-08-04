@@ -74,3 +74,5 @@ If you face permission issues, try prefixing commands with sudo or ensure your u
 
 Ensure your Dockerfile is correctly configured before building the image.
 
+🤝 Contributing
+Feel free to fork the repo and experiment with your own Dockerfile setups!
