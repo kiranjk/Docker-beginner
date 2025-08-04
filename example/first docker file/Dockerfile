@@ -1,18 +1,18 @@
-from ubuntu:latest
+FROM ubuntu:latest
 #set the working directory
-workdir /app
+WORKDIR /app
 
 #copy the file to from working directrory
 
-copy ./app
+COPY ./app
 
 #install the required pacages
 
-run apt-get update && apt-get install -y python3 python3-pip
+RUN apt-get update && apt-get install -y python3 python3-pip
 
 #set the environment varables
-env NAME kiran
+ENV NAME kiran
 
 #runthe application
 
-cmd ["python3", "app.py]
+CMD ["python3", "app.py"]
